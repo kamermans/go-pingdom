@@ -137,6 +137,7 @@ func (c *CheckResponseType) UnmarshalJSON(b []byte) error {
 			return err
 		}
 		c.HTTP = rawCheckDetails.HTTP
+		c.TCP = rawCheckDetails.TCP
 	}
 	return nil
 }
